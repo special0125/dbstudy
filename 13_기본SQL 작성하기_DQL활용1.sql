@@ -260,7 +260,7 @@ SELECT employee_id, first_name, job_id, salary * commission_pct AS commission
 -- 날짜는 오래된 날짜가 작은 값이고, 최근 날짜가 큰 값이다.
 SELECT last_name, hire_date
   FROM employees
-ORDER BY hire_date;  -- ORDER BY hire_date ASC;
+ ORDER BY hire_date;  -- ORDER BY hire_date ASC;
   
 
 -- 24. 부서번호(department_id)가 20, 50 인 부서에서 근무하는 모든 사원들의 부서번호의 오름차순으로 조회하되,
@@ -269,7 +269,7 @@ ORDER BY hire_date;  -- ORDER BY hire_date ASC;
 SELECT employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id
   FROM employees
  WHERE department_id IN(20, 50)
-ORDER BY department_id, last_name;
+ ORDER BY department_id, last_name;
 
 
 -- 25. 커미션(commission_pct)을 받는 모든 사원들의 last_name, salary, commission_pct 을 조회한다.
@@ -278,4 +278,4 @@ ORDER BY department_id, last_name;
 SELECT last_name, salary, commission_pct
   FROM employees
  WHERE commission_pct IS NOT NULL
-ORDER BY salary DESC, commission_pct DESC; 
+ ORDER BY salary DESC, commission_pct DESC; 
