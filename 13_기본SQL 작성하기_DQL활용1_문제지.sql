@@ -1,15 +1,26 @@
 ﻿-- << employees 테이블 >> --
 
+
 -- 1. 전체 사원의 모든 칼럼을 조회한다.
 
+SELECT * FROM EMPLOYEES;
 
 -- 2. 전체 사원의 first_name, last_name, job_id 를 조회한다.
+
+SELECT FIRST_NAME, LAST_NAME, JOB_ID FROM EMPLOYEES;
 
 
 -- 3. 연봉(salary)이 12000 이상되는 사원들의 last_name, salary 를 조회한다.
 
+SELECT LAST_NAME,
+       SALARY
+  FROM EMPLOYEES
+ WHERE SALARY >= 12000; 
+
 
 -- 4. 사원번호(employee_id)가 150 인 사원의 last_name, department_id 를 조회한다.
+
+
 
 
 -- 5. 커미션(commission_pct)을 받는 모든 사원들의 last_name, salary, commission_pct 를 조회한다.
